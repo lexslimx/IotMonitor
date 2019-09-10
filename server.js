@@ -7,6 +7,7 @@ const EventHubReader = require('./scripts/event-hub-reader.js');
 const iotHubConnectionString = process.env.IotHubConnectionString;
 const eventHubConsumerGroup = process.env.EventHubConsumerGroup;
 
+
 // Redirect requests to the public subdirectory to the root
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
